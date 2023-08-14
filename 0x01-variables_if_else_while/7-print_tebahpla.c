@@ -2,21 +2,18 @@
 /**
  * main - Entry point
  *
- * Description: Prints all the numbers of base 16 in lowercase
+ * Description: Prints the lowercase alphabet in reverse
  *              using the putchar function.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char digit;
-for (digit = '0'; digit <= '9'; digit++)
+char letter = 'z';
+while (letter >= 'a')
 {
-putchar(digit);
-}
-for (digit = 'a'; digit <= 'f'; digit++)
-{
-putchar(digit);
+putchar(letter);
+letter--;
 }
 putchar('\n');
 return (0);
