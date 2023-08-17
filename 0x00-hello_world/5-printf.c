@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
-main - A program that prints a line using printf function Return: 8 (success)
-.
+* main - Entry point
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-"S-printf.c" 181, 211C
-printf("with proper grammar, but the outcome is a piece of art,\n"); return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
