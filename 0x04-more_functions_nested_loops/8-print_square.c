@@ -1,34 +1,19 @@
 #include"main.h"
 
 /**
- * main - print numbers 1 - 100 followed by a new line
- * numbers that are multiples of 3 print Fizz
- * numbers that are multiples of 5 print Buzz
- * numbers that are multiples of 3 n 5 print FizzBuzz
- * each number and word to be separated by space
+ * print_square - print a square using the character #
+ * @size: is the size of the square
  * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_square(int size)
 {
-	int num;
+	int row, column;
 
-	for (num = 1; num <= 100; ++num)
+	for (row = 1; row <= size; ++row)
 	{
-		if (num % 3 == 0 && !(num % 5 == 0))
-			printf("Fizz");
-		else if (num % 5 == 0 && !(num % 3 == 0))
-			printf("Buzz");
-		else if (num % 3 == 0 && num % 5 == 0)
-			printf("FizzBuzz");
-		else
-			printf("%d", num);
-
-		if (num != 100)
-			printf(" ");
-		else
-			printf("\n");
+		for (column = 1; column <= size; ++column)
+			_putchar('#');
+		_putchar('\n');
 	}
-
-	return (0);
 }
