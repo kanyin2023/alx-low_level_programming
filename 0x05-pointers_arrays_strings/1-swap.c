@@ -1,15 +1,16 @@
 /**
- * _strlen - returns the length of a string
- * @s: string parameter input
- * Return: length of string
+ * swap_int - swaps the values of two integers
+ * using two input parameters
+ * @a: input parameter 1
+ * @b: input parameter 2
+ * Return: Nothing
 */
 
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int counter;
+	int temp;
 
-	for (counter = 0; *s != '\0'; ++s)
-		++counter;
-
-	return (counter);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
