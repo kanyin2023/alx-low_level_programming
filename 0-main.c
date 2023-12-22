@@ -1,17 +1,17 @@
-#include "0-object_like_macro.h"
-#include "0-object_like_macro.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include "hash_tables.h"
 
 /**
- * main - check the code
+ * main - check the code for
  *
- * Return: Always 0.
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    int s;
+    hash_table_t *ht;
 
-    s = 98 + SIZE;
-    printf("%d\n", s);
-    return (0);
-}
+    ht = hash_table_create(1024);
+    printf("%p\n", (void *)ht);
+    return (EXIT_SUCCESS);
